@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Embedded-Video</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <ol>
+          <div class="menu-items">
+            <li><img id="menu-icon" src="./icons/menu.png" alt="menu-icon" /></li>
+            <li><img id="yt-icon" src="./icons/yt-logo.svg" alt="yt-icon" /></li>
+          </div>
+        </ol>
+
+        <ol>
+          <div class="menu-items input" id="search">
+            <li><input type="text" placeholder="Search" /></li>
+            <li>
+              <button type="submit">
+                <img id="search-icon" src="./icons/search-icon.svg" alt="search-icon" />
+              </button>
+            </li>
+            <li><img id="mic-icon" src="./icons/mic.svg" alt="mic-icon" /></li>
+          </div>
+        </ol>
+        <ol>
+          <div class="menu-items">
+            <li><img class="apps" src="./icons/video-plus.svg" alt="video-plus" /></li>
+            <li><img class="apps" src="./icons/apps.svg" alt="app" /></li>
+            <li><img class="apps" src="./icons/dots-vertical.svg" alt="dots" /></li>
+            <li>
+              <img class="apps" src="./profile-picture/account-circle.svg" alt="account-circle" />
+            </li>
+          </div>
+        </ol>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="player">
+        <section class="embed">
+          <iframe
+            id="embed"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/jNQXAC9IVRw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <section class="title">
+          <div id="vid-title">Me at the zoo</div>
+          <div class="down-menu">
+            <div id="views">169,481,025 views</div>
+            <div class="like-menu">
+              <div class="title-btn" id="like">
+                <img src="./icons/thumb-up.svg" alt="like" /><span class="span">8M</span>
+              </div>
+              <div class="like-border"></div>
+              <div class="title-btn" id="dislike">
+                <img src="./icons/thumb-down.svg" alt="dislike" /><span class="span"
+                  >189K</span
+                >
+              </div>
+              <div class="title-btn" id="share">
+                <img src="./icons/share.svg" alt="share" /><span class="span">SHARE</span>
+              </div>
+              <div class="title-btn" id="playlist-plus">
+                <img src="./icons/playlist-plus.svg" alt="playlist-plus" /><span
+                  class="span"
+                  >SAVE</span
+                >
+              </div>
+              <div class="title-btn" id="dots">
+                <img src="./icons/three-dots.svg" alt="dots" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="description">
+          <div class="account-btns">
+            <div class="account">
+              <div><img src="./profile-picture/javed.jpg" alt="" /></div>
+              <div id="channel">
+                <span>jawed</span><br /><span id="sub">1.94M subscribers</span>
+              </div>
+            </div>
+            <div class="sub-btn"><span>SUBSCRIBE</span></div>
+          </div>
+          <div class="desc">
+            The first video on YouTube. While you wait for Part 2, listen to this
+            great song: <span>https://www.youtube.com/watch?v=zj82_...</span>
+            <div>SHOW MORE</div>
+          </div>
+        </section>
+        <section class="comments-header">
+          <div class="comment-header">
+            <span>11,087,075 Comments</span>
+            <div class="sort">
+              <img src="./icons/sort.svg" alt="sort" />
+              <span>SORT BY</span>
+            </div>
+          </div>
+          <div class="comment-input">
+            <img src="./profile-picture/account-circle.svg" alt="account" />
+            <input type="text" placeholder="Add a public comment..." />
+          </div>
+          <div class="comments">
+            <div class="comment-container">
+              <img src="./profile-picture/zoo.jpg" alt="zoo" />
+              <div class="info">
+                <div>
+                  <span class="name">San Diego Zoo</span>
+                  <span class="year">1 year ago</span>
+                </div>
+                <div>
+                  <span class="com-content"
+                    >We're so honored that the first ever YouTube video was filmed
+                    here!</span
+                  >
+                </div>
+                <div class="com-likes">
+                  <img src="./icons/thumb-up.svg" alt="" /><span>1.6M</span
+                  ><img src="./icons/thumb-down.svg" alt="" />
+                </div>
+                <div><span class="reply">▼ View 500 replies</span></div>
+              </div>
+            </div>
+            <div class="comment-container">
+              <img src="./profile-picture/kyle.jpg" alt="zoo" />
+              <div class="info">
+                <div>
+                  <span class="name">Kyle exum</span>
+                  <span class="year">10 months ago</span>
+                </div>
+                <div>
+                  <span class="com-content">
+                    Gotta put my comment on the first YouTube video ever. For the
+                    culture 😂🙌🏽</span
+                  >
+                </div>
+                <div class="com-likes">
+                  <img src="./icons/thumb-up.svg" alt="" /><span>189K</span
+                  ><img src="./icons/thumb-down.svg" alt="" />
+                </div>
+                <div><span class="reply">▼ View 500 replies</span></div>
+              </div>
+            </div>
+            <div class="comment-container">
+              <img src="./profile-picture/pixel.jpg" alt="zoo" />
+              <div class="info">
+                <div>
+                  <span class="name">Pixel Gaming</span>
+                  <span class="year">4 days ago</span>
+                </div>
+                <div>
+                  <span class="com-content">
+                    This Guy Should Be Feeling Like An Actor Right Now</span
+                  >
+                </div>
+                <div class="com-likes">
+                  <img src="./icons/thumb-up.svg" alt="" /><span>3.2K</span
+                  ><img src="./icons/thumb-down.svg" alt="" />
+                </div>
+                <div><span class="reply">▼ View 79 replies</span></div>
+              </div>
+            </div>
+            <div class="comment-container">
+              <img src="./profile-picture/austin.jpg" alt="zoo" />
+              <div class="info">
+                <div>
+                  <span class="name">AustinChallenges</span>
+                  <span class="year">1 day ago</span>
+                </div>
+                <div>
+                  <span class="com-content">
+                    Now This Is what I call REAL CONTENT!
+                  </span>
+                </div>
+                <div class="com-likes">
+                  <img src="./icons/thumb-up.svg" alt="" /><span>791</span
+                  ><img src="./icons/thumb-down.svg" alt="" />
+                </div>
+                <div><span class="reply">▼ View 28 replies</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <aside class="thumbnail">
+        <div class="side-vid">
+          <img src="./thumbnail/comedy.jpg" alt="">
+          <div class="thumb-title">
+            <div>Hardest Name in Africa</div>
+            <div>OSAS COMEDY SKITZ</div>
+            <div>32M views • 4 years ago</div>
+          </div>
+        </div>
+        <div class="side-vid">
+          <img src="./thumbnail/knan.jpg" alt="">
+          <div class="thumb-title">
+            <div>K'NAAN - Wavin' Flag (Coca-Cola Celebration Mix)</div>
+            <div>knaan</div>
+            <div>284M views • 11 years ago</div>
+          </div>
+        </div>
+        <div class="side-vid">
+          <img src="./thumbnail/waka.jpg" alt="">
+          <div class="thumb-title">
+            <div>Shakira - Waka Waka (This Time for Africa) (The Official ...</div>
+            <div>Shakira</div>
+            <div>2.8B views • 11 years ago</div>
+          </div>
+        </div>
+        <div class="side-vid">
+          <img src="./thumbnail/rick.jpg" alt="">
+          <div class="thumb-title">
+            <div>The Smartest RickRoll</div>
+            <div>SpaceBerries</div>
+            <div>19M views • 10 months ago</div>
+          </div>
+        </div>
+        <div class="side-vid">
+          <img src="./thumbnail/meatzoo.jpg" alt="">
+          <div class="thumb-title">
+            <div>Me at the Zoo Challenge (Split Screen)</div>
+            <div>Ryan Guerra</div>
+            <div>2.1M views • 2 years ago</div>
+          </div>
+        </div>
+        <div class="side-vid">
+          <img src="./thumbnail/prof.jpg" alt="">
+          <div class="thumb-title">
+            <div>Math Professor Fixes Projector Screen (April Fools Prank)</div>
+            <div>Matthew Weathers</div>
+            <div>106M views • 4 years ago</div>
+          </div>
+        </div>
+        <div class="side-vid">
+          <img src="./thumbnail/foot.jpg" alt="">
+          <div class="thumb-title">
+            <div>All Your PAIN In One Video</div>
+            <div>YouFact Live</div>
+            <div>31M views • 1 year ago ago</div>
+          </div>
+        </div>
+        <div class="side-vid">
+          <img src="./thumbnail/marsh.jpg" alt="">
+          <div class="thumb-title">
+            <div>Marshmello - Alone (Official Music Video)</div>
+            <div>Marshmello</div>
+            <div>2B views • 4 years ago</div>
+          </div>
+        </div>
+        <div class="side-vid">
+          <img src="./thumbnail/interview.jpg" alt="">
+          <div class="thumb-title">
+            <div>Animal sound Man</div>
+            <div>Chris Schofield</div>
+            <div>22M views • 6 years ago</div>
+          </div>
+        </div>
+        <div class="side-vid">
+          <img src="./thumbnail/maroon.jpg" alt="">
+          <div class="thumb-title">
+            <div>Maroon 5 - Girls Like You ft. Cardi B (Official Music Video)</div>
+            <div>Maroon 5</div>
+            <div>3B views • 3 years ago</div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
